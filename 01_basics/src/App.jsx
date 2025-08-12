@@ -8,7 +8,7 @@ const App = () => {
     <div>
       <Weather temp="31 " />
       <UserStatus loggedIn={true}  isAdmin={true} />
-      <Greeting timeOfDay="morning" />
+      <Greeting timeOfDay="afternoon" />
     </div>
   )
 }
