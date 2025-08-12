@@ -1,15 +1,11 @@
-import React from "react";
+const Greeting = ({timeOfDay}) => {
+  if (timeOfDay == "morning") {
+    return <h1>Good morning!</h1>
+  } else if (timeOfDay == "afternoon") {
+    return <h1>Good afternoon!</h1>
+  } else {
+    return <h1>Good day!</h1>
+  }
+}
 
-const personName = "Kaif"
-const date = new Date()
-
-const Greeting = () => {
-  return (
-    <div>
-      <h1>Salam alay kum {personName}</h1>
-      <p>Today's date is {date.getDate()}</p>
-    </div>
-  );
-};
-
-export default Greeting;
+export default Greeting
