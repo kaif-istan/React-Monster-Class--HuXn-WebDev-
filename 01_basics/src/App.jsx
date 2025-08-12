@@ -1,21 +1,9 @@
-import Footer from './components/Footer';
-import Greeting from './components/Greeting';
-import Header from './components/Header'
-import Main from './components/Main'
-import ProductList from './components/ProductList';
-import UserList from './components/UserList';
-import WelcomeMessage from './components/WelcomeMessage';
+import Person from './components/Person';
 
 const App = () => {
   return (
     <div>
-      {/* <Header />
-      <Main />
-      <Footer /> */}
-      {/* <WelcomeMessage /> */}
-      <Greeting />
-      <UserList />
-      <ProductList />
+      <Person name="Kaif"  age="22" />
     </div>
   )
 }
