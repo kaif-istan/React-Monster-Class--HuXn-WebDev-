@@ -1,11 +1,14 @@
-const styles = {color: 'black', backgroundColor: 'lightblue', padding: '2rem'}
+import React from 'react'
+import Example3 from './components/Example3'
+import Counter from './components/Counter'
+import ToDoList from './components/ToDoList'
 
 const App = () => {
   return (
     <div>
-      <h1 style={styles}>Inline style</h1>
+      <ToDoList />
     </div>
   )
 }
 
-export default App;
+export default App
