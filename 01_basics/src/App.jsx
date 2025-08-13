@@ -1,16 +1,11 @@
 import React from 'react'
-import Example3 from './components/Example3'
-import Counter from './components/Counter'
-import ToDoList from './components/ToDoList'
-import Profile from './components/Profile'
-import ShoppingList from './components/ShoppingList'
+import CopyInput from './components/CopyInput'
+import Switcher from './components/Switcher'
 
 const App = () => {
   return (
     <div>
-      {/* <ToDoList /> */}
-      {/* <Profile /> */}
-      <ShoppingList />
+      <Switcher />
     </div>
   )
 }
