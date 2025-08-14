@@ -1,10 +1,12 @@
-import Counter from "./components/Counter";
+import React from 'react'
+import Timer from './components/Timer'
 
 const App = () => {
-  
   return (
-    <Counter />
-  );
-};
+    <div>
+      <Timer />
+    </div>
+  )
+}
 
-export default App;
+export default App
