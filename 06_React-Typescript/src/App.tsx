@@ -1,24 +1,17 @@
-import AdminInfo from "./components/AdminInfo";
-import UserInfo from "./components/UserInfo";
+import React, { useState } from "react";
+import UserProfile from "./components/UserProfile";
+import TodoList from "./components/TodoList";
 
 const App = () => {
+  const [count, setCount] = useState<number>(0);
+
   return (
     <div>
-      <h1>User Info 👇</h1>
-      <UserInfo
-        username="Kaif"
-        email="kaifbiber@gmail.com"
-        age={23}
-        location={["Earth", "India"]}
-      />
-      <h1>Admin Info 👇</h1>
-      <AdminInfo
-        username="kaif-istan"
-        email="kaif85077@gmail.com"
-        age={23}
-        location={["Mars", "unknown"]}
-        admin="yes"
-      />
+      <h1>Count: {count}</h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+      <UserProfile />
+      <TodoList />
     </div>
   );
 };
