@@ -1,17 +1,14 @@
-import React, { useState } from "react";
-import UserProfile from "./components/UserProfile";
-import TodoList from "./components/TodoList";
-
+import ContactForm from "./components/ContactForm"
+import FocusInput from "./components/FocusInput"
+import EventHandler from "./components/EventHandler";
 const App = () => {
-  const [count, setCount] = useState<number>(0);
+  
 
   return (
     <div>
-      <h1>Count: {count}</h1>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-      <button onClick={() => setCount(count - 1)}>Decrement</button>
-      <UserProfile />
-      <TodoList />
+      <FocusInput />
+      <ContactForm />
+      <EventHandler />
     </div>
   );
 };

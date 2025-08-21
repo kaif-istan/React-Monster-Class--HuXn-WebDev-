@@ -9,14 +9,14 @@ interface UserProfile {
 const UserProfile = () => {
   const [profile, setProfile] = useState<UserProfile>({
     name: "",
-    age: 0,
+    age: NaN,
     email: "",
   });
 
   const updateName = (name: string) => {
     setProfile((prevProfile) => ({...prevProfile, name: name}))
   }
-  const updateAge = (age: string) => {
+  const updateAge = (age: number) => {
     setProfile((prevProfile) => ({...prevProfile, age: Number(age)}))
   }
   const updateEmail = (email: string) => {
@@ -35,8 +35,8 @@ const UserProfile = () => {
       <input
         type="text"
         placeholder="age"
-        value={profile.age > 0 ? profile.age : ""}
-        onChange={(e) => updateAge(e.target.value)}
+        value={isNaN(profile.age) ? "" : profile.age}
+        onChange={(e) => updateAge(+e.target.value)}
       />
       <input
         type="text"
