@@ -1,16 +1,11 @@
-import ContactForm from "./components/ContactForm"
-import FocusInput from "./components/FocusInput"
-import EventHandler from "./components/EventHandler";
-const App = () => {
-  
+import Counter from './components/Counter'
 
+const App = () => {
   return (
     <div>
-      <FocusInput />
-      <ContactForm />
-      <EventHandler />
+      <Counter />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
