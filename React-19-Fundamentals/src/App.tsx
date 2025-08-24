@@ -1,12 +1,10 @@
-import { Suspense } from "react";
-import FetchTodo from "./components/FetchTodo";
-
+import Card from "./components/Card";
 const App = () => {
-  return (
-    <Suspense fallback={<h2>Loading...</h2>}>
-      <FetchTodo />
-    </Suspense>
-  );
-};
+  return(
+    <div>
+      <Card />
+    </div>
+  )
+}
 
 export default App;
