@@ -1,8 +1,9 @@
-import Card from "./components/Card";
+import Form from "./component/Form";
+
 const App = () => {
   return(
     <div>
-      <Card />
+      <Form />
     </div>
   )
 }
